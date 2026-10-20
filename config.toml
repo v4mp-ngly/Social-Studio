@@ -1,0 +1,5 @@
+[functions.meta-api]
+verify_jwt = false # OAuth callback has no Supabase JWT; API routes validate JWT with auth.getUser
+
+[functions.meta-worker]
+verify_jwt = false # Worker validates META_CRON_SECRET header
